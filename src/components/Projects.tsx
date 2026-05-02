@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -16,7 +16,6 @@ const Projects = () => {
       category: 'fullstack',
       image: '/e-learning.png',
       tech: ['Flask', 'PostgreSQL', 'JavaScript', 'HTML5', 'CSS3'],
-      link: 'https://adaptive-learning-platform-6xbt.onrender.com/',
     },
     {
       id: 2,
@@ -25,7 +24,6 @@ const Projects = () => {
       category: 'frontend',
       image: '/algovista.png',
       tech: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
-      link: 'https://algovista.onrender.com',
     }
   ];
 
@@ -102,18 +100,6 @@ const Projects = () => {
                   <p className="text-slate-600 mb-8 line-clamp-2">
                     {project.description}
                   </p>
-                  
-                  <div className="flex gap-4">
-                    <a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="btn-primary py-2.5 px-6 text-sm"
-                    >
-                      Live Demo
-                    </a>
-                    {/* Add Github link here if available */}
-                  </div>
                 </div>
               </motion.div>
             ))}

@@ -28,7 +28,7 @@ const Hero = () => {
             precision.
           </h1>
           <p className="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
-            Hi, I&apos;m <span className="font-semibold text-slate-900">Magarete Njira</span>, a Fullstack Developer dedicated to crafting efficient backend systems and seamless user interfaces.
+            Hi, I&apos;m <span className="font-semibold text-slate-900">Magarete Njira</span>, a Fullstack Developer and Finance Professional dedicated to crafting efficient backend systems and seamless user interfaces.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="#projects" className="btn-primary group">
