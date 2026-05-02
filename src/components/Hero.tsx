@@ -59,7 +59,7 @@ const Hero = () => {
                 fill
                 sizes="(max-width: 768px) 100vw, 450px"
                 className="object-cover"
-                priority 
+                priority={true} 
               />
             </div>
 

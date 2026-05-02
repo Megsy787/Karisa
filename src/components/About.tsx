@@ -35,6 +35,7 @@ const About = () => {
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 className="object-cover"
+                priority
               />
             </div>
             {/* Decorative dot grid or similar could go here */}
