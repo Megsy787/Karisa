@@ -8,22 +8,22 @@ const Skills = () => {
     {
       title: 'Frontend',
       icon: <Layout className="text-blue-600" size={24} />,
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js', 'Tailwind CSS'],
+      skills: ['JavaScript', 'React', 'Next.js'],
     },
     {
       title: 'Backend',
       icon: <Server className="text-indigo-600" size={24} />,
-      skills: ['Python', 'Flask', 'Node.js', 'RESTful APIs', 'Authentication'],
+      skills: ['Python', 'Flask'],
     },
     {
       title: 'Database',
       icon: <Database className="text-purple-600" size={24} />,
-      skills: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'Redis'],
+      skills: ['PostgreSQL', 'MySQL', 'SQLite'],
     },
     {
       title: 'Tools & Lang',
       icon: <Terminal className="text-slate-600" size={24} />,
-      skills: ['C', 'Git', 'Excel', 'QuickBooks', 'Shell Scripting'],
+      skills: ['C', 'Git', 'Excel', 'QuickBooks'],
     },
   ];
 
