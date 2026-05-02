@@ -80,6 +80,7 @@ const Projects = () => {
                     src={project.image} 
                     alt={project.title} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-blue-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
