@@ -26,14 +26,14 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="section-padding bg-white relative">
+    <section id="experience" className="section-padding bg-slate-900 relative">
       <div className="container mx-auto">
         <div className="flex flex-col items-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-slate-900 mb-4"
+            className="text-4xl font-bold text-white mb-4"
           >
             Professional Experience
           </motion.h2>
@@ -59,14 +59,14 @@ const Experience = () => {
               <div className="hidden sm:block absolute left-[120px] top-0 bottom-0 w-px bg-slate-200 group-last:bg-gradient-to-b group-last:from-slate-200 group-last:to-transparent" />
               
               {/* Timeline Dot */}
-              <div className="absolute left-0 sm:left-[111px] top-8 w-5 h-5 rounded-full border-4 border-white bg-blue-600 shadow-sm z-10" />
+              <div className="absolute left-0 sm:left-[111px] top-8 w-5 h-5 rounded-full border-4 border-slate-900 bg-blue-600 shadow-sm z-10" />
               
               {/* Timeline Date (Desktop) */}
               <div className="hidden sm:block absolute left-0 top-8 w-[90px] text-right">
                 <span className="text-sm font-bold text-blue-600">{exp.period}</span>
               </div>
 
-              <div className="bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-100 card-hover ml-6 sm:ml-0 shadow-sm relative overflow-hidden">
+              <div className="bg-slate-950 rounded-2xl p-6 md:p-8 border border-slate-800 card-hover ml-6 sm:ml-0 shadow-sm relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
                   <Briefcase size={80} />
                 </div>
@@ -74,9 +74,9 @@ const Experience = () => {
                   <Calendar size={16} />
                   <span>{exp.period}</span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">{exp.title}</h3>
-                <p className="text-lg font-medium text-slate-600 mb-4">{exp.company}</p>
-                <p className="text-slate-600 leading-relaxed relative z-10">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{exp.title}</h3>
+                <p className="text-lg font-medium text-slate-300 mb-4">{exp.company}</p>
+                <p className="text-slate-300 leading-relaxed relative z-10">
                   {exp.description}
                 </p>
               </div>

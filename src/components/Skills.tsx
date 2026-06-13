@@ -22,7 +22,7 @@ const Skills = () => {
     },
     {
       title: 'Core Competencies',
-      icon: <Terminal className="text-slate-600" size={24} />,
+      icon: <Terminal className="text-slate-300" size={24} />,
       skills: ['Problem-Solving', 'Leadership', 'Adaptability', 'Communication'],
     },
   ];
@@ -46,10 +46,10 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="section-padding bg-white">
+    <section id="skills" className="section-padding bg-slate-900">
       <div className="container mx-auto">
         <div className="flex flex-col items-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">My Skills</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">My Skills</h2>
           <div className="w-20 h-1 bg-blue-600 rounded-full" />
         </div>
 
@@ -64,17 +64,17 @@ const Skills = () => {
             <motion.div 
               key={idx}
               variants={itemVariants}
-              className="p-8 rounded-2xl bg-slate-50 border border-slate-100 card-hover"
+              className="p-8 rounded-2xl bg-slate-950 border border-slate-800 card-hover"
             >
-              <div className="mb-6 inline-flex p-3 bg-white rounded-xl shadow-sm border border-slate-100">
+              <div className="mb-6 inline-flex p-3 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
                 {category.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">{category.title}</h3>
+              <h3 className="text-xl font-bold text-white mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, sIdx) => (
                   <span 
                     key={sIdx}
-                    className="px-3 py-1 bg-white text-slate-600 text-sm font-medium rounded-lg border border-slate-200"
+                    className="px-3 py-1 bg-slate-900 text-slate-300 text-sm font-medium rounded-lg border border-slate-700"
                   >
                     {skill}
                   </span>

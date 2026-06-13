@@ -28,10 +28,10 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
+      isScrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
     }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="#home" className="text-2xl font-bold tracking-tight text-slate-900">
+        <Link href="#home" className="text-2xl font-bold tracking-tight text-white">
           Magarete<span className="text-blue-600">.</span>
         </Link>
 
@@ -41,7 +41,7 @@ const Header = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-blue-600 transition-colors"
             >
               {link.name}
             </Link>
@@ -53,7 +53,7 @@ const Header = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden p-2 text-slate-900"
+          className="md:hidden p-2 text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,7 +67,7 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl md:hidden"
+            className="absolute top-full left-0 w-full bg-slate-900 border-b border-slate-800 shadow-xl md:hidden"
           >
             <nav className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
@@ -75,7 +75,7 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-lg font-medium text-slate-900 hover:text-blue-600"
+                  className="text-lg font-medium text-white hover:text-blue-600"
                 >
                   {link.name}
                 </Link>

@@ -7,7 +7,7 @@ import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 bg-white">
+    <section id="home" className="min-h-screen flex items-center pt-20 bg-slate-900">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
@@ -22,13 +22,13 @@ const Hero = () => {
           >
             Available for new opportunities
           </motion.span>
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-[1.1] mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-6">
             Building digital <br />
             <span className="text-gradient">experiences</span> with <br />
             precision.
           </h1>
-          <p className="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
-            Hi, I&apos;m <span className="font-semibold text-slate-900">Magarete Njira Karisa</span>, a commercially astute Finance Professional and Developer dedicated to streamlining operations, driving organizational progress, and building efficient solutions.
+          <p className="text-lg text-slate-300 mb-10 max-w-lg leading-relaxed">
+            Hi, I&apos;m <span className="font-semibold text-white">Magarete Njira Karisa</span>, a commercially astute Finance Professional and Developer dedicated to streamlining operations, driving organizational progress, and building efficient solutions.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="#projects" className="btn-primary group">
@@ -52,7 +52,7 @@ const Hero = () => {
             {/* Background Decorative Element */}
             <div className="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-50 rounded-3xl -rotate-6 z-0" />
             
-            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl z-10 border-8 border-white">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl z-10 border-8 border-slate-900">
               <Image 
                 src="/maggie.jpeg" 
                 alt="Magarete Njira" 
@@ -68,7 +68,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
-              className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block border border-slate-100"
+              className="absolute -bottom-6 -left-6 bg-slate-900 p-6 rounded-2xl shadow-xl z-20 hidden md:block border border-slate-800"
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
@@ -76,7 +76,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Commitment</p>
-                  <p className="text-lg font-bold text-slate-900">To Excellence</p>
+                  <p className="text-lg font-bold text-white">To Excellence</p>
                 </div>
               </div>
             </motion.div>
