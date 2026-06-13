@@ -2,15 +2,15 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { User, Mail, MapPin, GraduationCap } from 'lucide-react';
+import { User, Mail, MapPin, GraduationCap, Phone } from 'lucide-react';
 
 const About = () => {
   const details = [
-    { icon: <User size={20} />, label: 'Name', value: 'Magarete Njira' },
+    { icon: <User size={20} />, label: 'Name', value: 'Magarete Njira Karisa' },
     { icon: <Mail size={20} />, label: 'Email', value: 'njiramargaret01@gmail.com' },
+    { icon: <Phone size={20} />, label: 'Phone', value: '+254 708 784 001' },
     { icon: <MapPin size={20} />, label: 'Location', value: 'Nairobi, Kenya' },
-    { icon: <GraduationCap size={20} />, label: 'Education', value: 'BS in Commerce (Finance)' },
-    { icon: <GraduationCap size={20} />, label: 'Education', value: 'Computer Science Degree' },
+    { icon: <GraduationCap size={20} />, label: 'Education', value: 'B.Com (Finance), Co-op Univ.' },
   ];
 
   return (
@@ -46,12 +46,12 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Expertise in Development & Finance</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Professional Summary</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              I am a detail-oriented professional with a unique blend of technical and financial expertise. My coding journey focuses on building robust backend systems with Python and Flask, ensuring data integrity and workflow automation.
+              A results-oriented and commercially astute finance professional with a strong record of collaboration, analytical problem-solving, and dedicated teamwork in fast-paced business environments. Acknowledged for consistently exceeding performance targets and for introducing process improvements that streamline operations, enhance customer satisfaction, and contribute to measurable growth in profitability.
             </p>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              With a background in Commerce and Finance, I bring a structured analytical approach to every project, whether I&apos;m reconciling complex accounts or optimizing a database schema.
+              Combines creative problem-solving with a disciplined, detail-focused approach, ensuring innovative solutions and reliable execution. Passionate about driving organizational progress by improving team efficiency, elevating service standards, and fostering a culture of collaboration to enable both individual achievement and collective success.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mb-10">

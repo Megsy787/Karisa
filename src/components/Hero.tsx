@@ -28,7 +28,7 @@ const Hero = () => {
             precision.
           </h1>
           <p className="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
-            Hi, I&apos;m <span className="font-semibold text-slate-900">Magarete Njira</span>, a Fullstack Developer and Finance Professional dedicated to crafting efficient backend systems and seamless user interfaces.
+            Hi, I&apos;m <span className="font-semibold text-slate-900">Magarete Njira Karisa</span>, a commercially astute Finance Professional and Developer dedicated to streamlining operations, driving organizational progress, and building efficient solutions.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="#projects" className="btn-primary group">
@@ -72,11 +72,11 @@ const Hero = () => {
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  3+
+                  100<span className="text-sm">%</span>
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Years of</p>
-                  <p className="text-lg font-bold text-slate-900">Experience</p>
+                  <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Commitment</p>
+                  <p className="text-lg font-bold text-slate-900">To Excellence</p>
                 </div>
               </div>
             </motion.div>

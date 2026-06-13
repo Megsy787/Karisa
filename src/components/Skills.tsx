@@ -6,24 +6,24 @@ import { Layout, Server, Palette, Code2, Database, Terminal } from 'lucide-react
 const Skills = () => {
   const categories = [
     {
-      title: 'Frontend',
-      icon: <Layout className="text-blue-600" size={24} />,
-      skills: ['JavaScript', 'React', 'Next.js'],
+      title: 'Programming',
+      icon: <Code2 className="text-blue-600" size={24} />,
+      skills: ['Python', 'JavaScript', 'HTML/CSS', 'C'],
     },
     {
-      title: 'Backend',
-      icon: <Server className="text-indigo-600" size={24} />,
-      skills: ['Python', 'Flask'],
-    },
-    {
-      title: 'Database',
+      title: 'Databases',
       icon: <Database className="text-purple-600" size={24} />,
       skills: ['PostgreSQL', 'MySQL', 'SQLite'],
     },
     {
-      title: 'Tools & Lang',
+      title: 'Financial Software',
+      icon: <Layout className="text-green-600" size={24} />,
+      skills: ['Excel', 'QuickBooks', 'Zoho', 'Xero', 'Wave'],
+    },
+    {
+      title: 'Core Competencies',
       icon: <Terminal className="text-slate-600" size={24} />,
-      skills: ['C', 'Git', 'Excel', 'QuickBooks'],
+      skills: ['Problem-Solving', 'Leadership', 'Adaptability', 'Communication'],
     },
   ];
 
