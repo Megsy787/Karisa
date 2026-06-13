@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -35,9 +35,9 @@ const Hero = () => {
               View My Work
               <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link href="/Megsy CV.pdf" className="btn-secondary group" download>
-              Download CV
-              <Download className="ml-2 w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+            <Link href="/Magarete_Karisa_CV_Final.pdf" target="_blank" rel="noopener noreferrer" className="btn-secondary group">
+              View CV
+              <FileText className="ml-2 w-4 h-4 transition-transform group-hover:translate-y-0.5" />
             </Link>
           </div>
         </motion.div>

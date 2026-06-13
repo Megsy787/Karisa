@@ -68,8 +68,8 @@ const About = () => {
               ))}
             </div>
 
-            <a href="/Megsy CV.pdf" className="btn-primary" download>
-              Download CV
+            <a href="/Magarete_Karisa_CV_Final.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">
+              View CV
             </a>
           </motion.div>
         </div>
