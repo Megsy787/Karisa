@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
 @theme {
   --color-primary: #2563eb;
   --color-primary-dark: #1d4ed8;
@@ -18,9 +19,14 @@
   }
 
   body {
-    @apply bg-slate-950 text-white antialiased selection:bg-blue-900 selection:text-blue-100;
-    background-image: radial-gradient(#1e293b 1px, transparent 1px);
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900 transition-colors duration-300;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
     background-size: 32px 32px;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-white selection:bg-blue-900 selection:text-blue-100;
+    background-image: radial-gradient(#1e293b 1px, transparent 1px);
   }
 }
 
@@ -34,7 +40,7 @@
   }
 
   .glass-header {
-    @apply sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 transition-all duration-300;
+    @apply sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300;
   }
 
   .btn-primary {
@@ -42,7 +48,7 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 active:scale-95 bg-slate-900 text-slate-200 border border-slate-800 hover:bg-slate-800 hover:border-slate-700;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 active:scale-95 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-200 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-700;
   }
 }
 
